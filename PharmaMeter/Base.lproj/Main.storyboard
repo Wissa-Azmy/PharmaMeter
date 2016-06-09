@@ -83,13 +83,13 @@
                                 <rect key="frame" x="20" y="355" width="280" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AcS-Ka-8eV">
                                 <rect key="frame" x="20" y="413" width="280" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rk9-uK-Hb6">
                                 <rect key="frame" x="133" y="466" width="55" height="30"/>
@@ -119,13 +119,13 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="UsernameField" destination="eft-E3-pc4" id="xmB-l7-5MX"/>
                         <outlet property="confirmPassField" destination="AcS-Ka-8eV" id="dMn-6B-8lY"/>
                         <outlet property="emailField" destination="CNH-6r-P8m" id="4yQ-1v-FN5"/>
                         <outlet property="firstNameField" destination="wsM-KE-ZGg" id="S14-iX-K0i"/>
                         <outlet property="lastNameField" destination="HMO-7a-oMR" id="KIe-tJ-6AI"/>
                         <outlet property="passField" destination="ve1-4F-Qyr" id="iDU-15-L8L"/>
                         <outlet property="phoneField" destination="LGv-pU-xG0" id="C4y-VI-BVK"/>
+                        <outlet property="usernameField" destination="eft-E3-pc4" id="Vff-Ft-5sG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HBz-Ph-69g" userLabel="First Responder" sceneMemberID="firstResponder"/>
