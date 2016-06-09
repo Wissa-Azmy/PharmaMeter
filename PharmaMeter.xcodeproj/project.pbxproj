@@ -12,6 +12,8 @@
 		68F218611D085658002C7927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F2185F1D085658002C7927 /* Main.storyboard */; };
 		68F218631D085658002C7927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F218621D085658002C7927 /* Assets.xcassets */; };
 		68F218661D085658002C7927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F218641D085658002C7927 /* LaunchScreen.storyboard */; };
+		68F2186E1D085B8E002C7927 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F2186D1D085B8E002C7927 /* LoginController.swift */; settings = {ASSET_TAGS = (); }; };
+		68F218701D098A1C002C7927 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F2186F1D098A1C002C7927 /* SignupController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		68F218621D085658002C7927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68F218651D085658002C7927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68F218671D085658002C7927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68F2186D1D085B8E002C7927 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		68F2186F1D098A1C002C7927 /* SignupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				68F218621D085658002C7927 /* Assets.xcassets */,
 				68F218641D085658002C7927 /* LaunchScreen.storyboard */,
 				68F218671D085658002C7927 /* Info.plist */,
+				68F2186D1D085B8E002C7927 /* LoginController.swift */,
+				68F2186F1D098A1C002C7927 /* SignupController.swift */,
 			);
 			path = PharmaMeter;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				68F2185E1D085658002C7927 /* ViewController.swift in Sources */,
+				68F2186E1D085B8E002C7927 /* LoginController.swift in Sources */,
 				68F2185C1D085658002C7927 /* AppDelegate.swift in Sources */,
+				68F218701D098A1C002C7927 /* SignupController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

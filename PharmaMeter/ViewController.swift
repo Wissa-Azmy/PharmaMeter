@@ -12,6 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let userId = NSUserDefaults.standardUserDefaults().stringForKey("userId")
+        
+        
+        if userId == nil{
+                self.performSegueWithIdentifier("loginView", sender: self)
+        }
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -20,6 +28,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func logoutBtn(sender: UIBarButtonItem) {
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("userId")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+        let signInPage = self.storyboard?.instantiateViewControllerWithIdentifier("loginViewController")
+        let signInNav = UINavigationController(rootViewController: signInPage!)
+        let appDelegate = UIApplication.sharedApplication().delegate
+        
+        appDelegate!.window??.rootViewController = signInNav
 
+    }
 }
 
