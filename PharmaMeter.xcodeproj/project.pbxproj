@@ -14,6 +14,7 @@
 		68F218661D085658002C7927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F218641D085658002C7927 /* LaunchScreen.storyboard */; };
 		68F2186E1D085B8E002C7927 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F2186D1D085B8E002C7927 /* LoginController.swift */; settings = {ASSET_TAGS = (); }; };
 		68F218701D098A1C002C7927 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F2186F1D098A1C002C7927 /* SignupController.swift */; settings = {ASSET_TAGS = (); }; };
+		68F218721D0C1CD8002C7927 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F218711D0C1CD8002C7927 /* ProfileController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		68F218671D085658002C7927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68F2186D1D085B8E002C7927 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		68F2186F1D098A1C002C7927 /* SignupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		68F218711D0C1CD8002C7927 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				68F218671D085658002C7927 /* Info.plist */,
 				68F2186D1D085B8E002C7927 /* LoginController.swift */,
 				68F2186F1D098A1C002C7927 /* SignupController.swift */,
+				68F218711D0C1CD8002C7927 /* ProfileController.swift */,
 			);
 			path = PharmaMeter;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F218721D0C1CD8002C7927 /* ProfileController.swift in Sources */,
 				68F2185E1D085658002C7927 /* ViewController.swift in Sources */,
 				68F2186E1D085B8E002C7927 /* LoginController.swift in Sources */,
 				68F2185C1D085658002C7927 /* AppDelegate.swift in Sources */,

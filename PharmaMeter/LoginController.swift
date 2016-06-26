@@ -44,8 +44,8 @@ class LoginController: UIViewController {
             let username = usernameField.text
             let password = passField.text
             
-            print("Username: \(username)")
-            print("Password: \(password)")
+//            print("Username: \(username)")
+//            print("Password: \(password)")
             
             // Request Configuration
             let url = NSURL(string: "http://localhost:8000/api/login")
@@ -76,8 +76,8 @@ class LoginController: UIViewController {
                                 NSUserDefaults.standardUserDefaults().setObject(parseJSON["token"], forKey: "token")
                                 NSUserDefaults.standardUserDefaults().synchronize()
                                 
-                                let userToken = parseJSON["token"]
-                                print(userToken)
+//                                let userToken = parseJSON["token"]
+//                                print(userToken)
                                 
                                 self.displayAlert("Success", message: "You are Successfuly Logged In")
 

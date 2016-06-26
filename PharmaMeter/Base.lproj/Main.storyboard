@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="PharmaMeter" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,32 +16,142 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Protected Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9l-A6-HVq">
-                                <rect key="frame" x="101" y="179" width="118" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rC2-Tf-Hdn">
+                                <rect key="frame" x="14" y="162" width="44" height="30"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Profile"/>
+                                <connections>
+                                    <action selector="profileBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="mlz-Rq-X4x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjm-l9-QNT">
+                                <rect key="frame" x="133" y="162" width="40" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Order"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fw-bb-ZTY">
+                                <rect key="frame" x="245" y="162" width="50" height="30"/>
+                                <animations/>
+                                <state key="normal" title="History"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78Z-aS-SkI">
+                                <rect key="frame" x="18" y="366" width="37" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Invite"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gf-gB-FDD">
+                                <rect key="frame" x="138" y="366" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Tips"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nl6-gI-B6a">
+                                <rect key="frame" x="243" y="366" width="55" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Contact"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsw-zj-AiI">
+                                <rect key="frame" x="11" y="262" width="50" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Nearby"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbO-4h-Q4r">
+                                <rect key="frame" x="117" y="262" width="73" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Reminders"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="934-UY-Dyz">
+                                <rect key="frame" x="232" y="262" width="77" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Emergency"/>
+                            </button>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v8f-8B-Cx0">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <animations/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bjL-Bp-ZDy"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Wk3-OZ-uxT">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Main Page" id="Wk3-OZ-uxT">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="y4x-MB-DpD">
                             <connections>
                                 <action selector="logoutBtn:" destination="BYZ-38-t0r" id="3dM-qn-ANP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="searchDisplayController" destination="oZo-I5-Pgh" id="hh2-D7-eZn"/>
                         <segue destination="AZU-4G-gQu" kind="presentation" identifier="loginView" id="yqG-WK-OH6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="oZo-I5-Pgh">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="ooV-k4-P3p"/>
+                        <outlet property="searchBar" destination="v8f-8B-Cx0" id="Uge-mm-PIv"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="6la-iI-vW3"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="rwD-jf-Vfm"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="cRE-xE-R3u"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="495" y="309"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="GnC-Gp-xH0">
+            <objects>
+                <viewController storyboardIdentifier="ProfileController" id="kG2-5Y-FF1" customClass="ProfileController" customModule="PharmaMeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XBS-Xn-LYg"/>
+                        <viewControllerLayoutGuide type="bottom" id="d3X-OW-I8e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mcP-us-Pkf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Full Name " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgk-xe-c0f">
+                                <rect key="frame" x="20" y="109" width="280" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmn-KJ-T1E">
+                                <rect key="frame" x="20" y="148" width="280" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRK-rF-zUm">
+                                <rect key="frame" x="143" y="229" width="34" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="profileBackBtn" destination="kG2-5Y-FF1" eventType="touchUpInside" id="B2u-0L-pof"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="KON-eL-uUS"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="phoneLbl" destination="tmn-KJ-T1E" id="UyV-UB-tfa"/>
+                        <outlet property="usernameLbl" destination="Pgk-xe-c0f" id="djl-F6-YLb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ly8-sk-g0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="495" y="939"/>
         </scene>
         <!--Signup Controller-->
         <scene sceneID="TMv-kn-ZDR">

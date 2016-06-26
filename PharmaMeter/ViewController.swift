@@ -37,7 +37,15 @@ class ViewController: UIViewController {
         let appDelegate = UIApplication.sharedApplication().delegate
         
         appDelegate!.window??.rootViewController = signInNav
-
+    }
+    
+    @IBAction func profileBtn() {
+        let profilePage = self.storyboard?.instantiateViewControllerWithIdentifier("ProfileController")
+        let profileNav = UINavigationController(rootViewController: profilePage!)
+        let appDelegate = UIApplication.sharedApplication().delegate
+        
+        appDelegate!.window??.rootViewController = profileNav
+        
     }
 }
 
